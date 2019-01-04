@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>sdalton.ca</title>
+  <meta name="author" content="samuel dalton">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script type='text/javascript' src='js/knockout.js'></script>
+</head>
+
+<body  style="background-color: #f2f2f2">
+
+  <div class="container-fluid pl-0 pr-0">
+    <div class="navbar navbar-dark w-100 navbar-expand-md" style="background-color: #4d4d4d;">
+      <span class="navbar-brand">Samuel Dalton</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="https://github.com/sdalton437">Github</a>
+     
+    
+        <a class="nav-item nav-link" href="https://www.linkedin.com/in/samuel-dalton-36803b156/">Linkedin</a>
+        <a class="nav-item nav-link" href="#">Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" >
+    <div class="row mt-3 h-100">
+      <div class="col-md-4">
+        <img src="img/img.jpg" class="img-fluid d-block mx-auto">
+      </div>
+      <div class="col-md-8">
+        <div class="row h-100">
+          <div class=" col-md-12 my-auto">
+            <h5>Hi!</h5>
+            <p>
+            I'm Sam Dalton, a student pursuing a Bachelor of Bioresource Engineering
+            with a minor in Computer Science at McGill University. My interests are varied,
+            but my focus is on learning how we can use computers and technology to help us
+            make better decisions about the environment. I have experience in various languages and 
+            technologies, Python, C, C++ and Java to name a few. You can view some of the projects
+            I have worked on or are working on below. 
+            </p>
+            <h6>Contact:</h6>
+            <ul>
+              <li>Phone: (705)-977-0614</li>
+              <li>Email: daltonsam437@gmail.com</li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class=col-sm-12>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" >
+    <div class="row mb-4">
+      <div class=col-sm-12>
+        <h2>Projects</h2>
+      </div>
+    </div>
+  </div>
+  <div data-bind="foreach: projects">
+  <div class="container" >
+    <div class="row pt-4 pb-4 pl-3 pr-3 ml-5 mr-5 mb-5 rounded shadow" style="background-color: #ffffff;">
+      <div class="col-md-4">
+        <img data-bind="attr: {src: image}" class="img-fluid rounded">
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-auto">
+            <h3 data-bind="text: title"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-auto">
+            <p data-bind="text: description"></p>
+            <a class="btn rounded border border-dark float-right" role="button" data-bind="attr: {href: links}">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript">
+    ko.applyBindings({
+        projects: [ 
+        { title: "NumericAg", 
+          description: `
+            NumericAg is a project I worked on with Dr. Viacheslav Adamchuk and Sadand Shinde. 
+            My role was developing a new UI for the service, as well as implementing a new database. 
+            NumericAg is a research project still in development that aims to help farmers make decisions about
+            fertilizer use on their crops by estimating net return over the cost of fertilization by integrating previous 
+            fertility trial records, information about local conditions and economic considerations`,
+          image: "img/numericag.jpg",
+          links: "http://www.numericag.com/"},
+        { title: "Items Catalog", 
+        description: `
+          NumericAg is a project I worked on with Dr. Viacheslav Adamchuk and Sadand Shinde. 
+          My role was developing a new UI for the service, as well as implementing a new database. 
+          NumericAg is a research project still in development that aims to help farmers make decisions about
+          fertilizer use on their crops by estimating net return over the cost of fertilization by integrating previous 
+          fertility trial records, information about local conditions and economic considerations`,
+        image: "img/numericag.jpg",
+        links: "http://www.numericag.com/"}
+        ]
+    });
+  </script>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
