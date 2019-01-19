@@ -15,7 +15,7 @@
 
   <div class="container-fluid pl-0 pr-0">
     <div class="navbar navbar-dark w-100 navbar-expand-md" style="background-color: #001a33;">
-      <span class="navbar-brand"> Samuel Dalton <h6><small> SOFTWARE ENGINEER </small></h6> </span>
+      <span class="navbar-brand"> Samuel Dalton <h6><small> SOFTWARE DEVELOPMENT </small></h6> </span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -25,7 +25,7 @@
      
     
         <a class="nav-item nav-link" href="https://www.linkedin.com/in/samuel-dalton-36803b156/">Linkedin</a>
-        <a class="nav-item nav-link" href="#">Resume</a>
+       
         </div>
       </div>
     </div>
@@ -99,6 +99,7 @@
   <script type="text/javascript">
     ko.applyBindings({
         projects: [ 
+
         { title: "NumericAg", 
           description: `
             NumericAg is a project I worked on with Dr. Viacheslav Adamchuk and Sadand Shinde. 
@@ -108,6 +109,28 @@
             fertility trial records, information about local conditions and economic considerations`,
           image: "img/numericag.jpg",
           links: "http://www.numericag.com/"},
+
+	    { title: "Neighbourhood Maps Project",
+	      description: `
+		    This is a fairly cimple project I worked on that uses the Google Maps API and the Foursquare API. It contains a list of
+		    good locations in Montreal which the user can filter through using a search bar. Upon clicking the location, details 
+		    about the location will be displayed (hours, address etc...) which is retrieved using the Google Maps API and a review 
+		    using the Foursquare API. All that is needed to add additional locations is a location name and latitude and longitude. 
+	      `,
+	      image: "img/neighbourhood_map.jpg",
+	      links: "http://sdalton.ca/projects/MontrealNeighborhoodMap/"
+
+         },
+         {
+          title: "Catalogue Project",
+          description: 
+            `A project I did to learn more about web applications. This project is for a fictional catalogue for a outdoors equipment store.
+            It features a google sign in which signed in members can create items or edit/delete items they have created, whereas guests that are
+            not signed in can only view items. It is built using the python microframework Flask and SQLAlchemy.
+            `,
+          image: "img/catalogue.jpg",
+          links: "https://github.com/sdalton437/mocCatalogue"
+         }
         ]
     });
   </script>
